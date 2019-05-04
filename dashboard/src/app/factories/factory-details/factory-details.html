@@ -1,0 +1,25 @@
+<!--
+
+    Copyright (c) 2015-2018 Red Hat, Inc.
+    This program and the accompanying materials are made
+    available under the terms of the Eclipse Public License 2.0
+    which is available at https://www.eclipse.org/legal/epl-2.0/
+
+    SPDX-License-Identifier: EPL-2.0
+
+    Contributors:
+      Red Hat, Inc. - initial API and implementation
+
+-->
+<che-toolbar
+        che-title="{{factoryDetailsController.factory.name ? factoryDetailsController.factory.name : factoryDetailsController.factory.id}}"
+        che-title-icons-controller="factoryDetailsController"
+        che-button-name="Open"
+        che-button-href="{{factoryDetailsController.getFactoryIdUrl()}}"
+        che-button-href-target="_blank"
+        che-breadcrumb-title="All factories"
+        che-breadcrumb-href="#/factories">
+</che-toolbar>
+<md-content md-scroll-y flex class="factory-details factory-details-content">
+  <cdvy-factory-information cdvy-factory="factoryDetailsController.factory"></cdvy-factory-information>
+</md-content>

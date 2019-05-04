@@ -1,0 +1,22 @@
+specVersion: 0.0.1
+name: che-in-che
+projects:
+  - name: che
+    source:
+      type: git
+      location: 'https://github.com/eclipse/che.git'
+components:
+  - type: cheEditor
+    id: org.eclipse.che.editor.theia:1.0.0
+  - type: chePlugin
+    id: che-machine-exec-plugin:0.0.1
+  - alias: che-dev
+    type: kubernetes
+    reference: .che-dev.yaml
+commands:
+  - name: fastbuild
+    actions:
+      - type: exec
+        component: che-dev
+        command: cd /projects/che && mvn clean install -Pnative -DskipTests=true
+        workdir: /projects/che
