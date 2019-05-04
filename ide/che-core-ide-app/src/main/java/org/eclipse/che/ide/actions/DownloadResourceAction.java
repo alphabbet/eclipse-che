@@ -63,7 +63,7 @@ public class DownloadResourceAction extends AbstractPerspectiveAction {
     // checkState(resource != null, "Null resource occurred");
 
     // downloadContainer.setUrl(urlModifier.modify(resource.getURL()));
-    return；
+    return;
   }
 
   /** {@inheritDoc} */
@@ -73,6 +73,6 @@ public class DownloadResourceAction extends AbstractPerspectiveAction {
 
     // e.getPresentation().setVisible(true);
     // e.getPresentation().setEnabled(resources != null && resources.length == 1);
-    return ；
+    return;
   }
 }

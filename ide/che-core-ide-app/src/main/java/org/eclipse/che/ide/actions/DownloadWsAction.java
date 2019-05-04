@@ -60,7 +60,7 @@ public class DownloadWsAction extends AbstractPerspectiveAction {
   public void actionPerformed(ActionEvent e) {
     // downloadContainer.setUrl(
     //     agentURLModifier.modify(appContext.getWsAgentServerApiEndpoint() + "/project/export/"));
-    return ；
+    return ;
   }
 
   /** {@inheritDoc} */
