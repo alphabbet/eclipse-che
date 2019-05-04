@@ -536,8 +536,8 @@ public class StandardComponentInitializer {
     actionManager.registerAction(CREATE_PROJECT, createProjectAction);
     workspaceGroup.add(createProjectAction);
 
-    //actionManager.registerAction("downloadWsAsZipAction", downloadWsAction);
-    //workspaceGroup.add(downloadWsAction);
+    actionManager.registerAction("downloadWsAsZipAction", downloadWsAction);
+    workspaceGroup.add(downloadWsAction);
 
     workspaceGroup.addSeparator();
     workspaceGroup.add(startWorkspaceAction);
@@ -580,8 +580,8 @@ public class StandardComponentInitializer {
     actionManager.registerAction("convertFolderToProject", convertFolderToProjectAction);
     projectGroup.add(convertFolderToProjectAction);
 
-    //actionManager.registerAction("downloadAsZipAction", downloadProjectAction);
-    //projectGroup.add(downloadProjectAction);
+    actionManager.registerAction("downloadAsZipAction", downloadProjectAction);
+    projectGroup.add(downloadProjectAction);
 
     actionManager.registerAction("showHideHiddenFiles", showHiddenFilesAction);
     projectGroup.add(showHiddenFilesAction);

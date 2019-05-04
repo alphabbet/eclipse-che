@@ -59,26 +59,28 @@ public class DownloadProjectAction extends AbstractPerspectiveAction {
   /** {@inheritDoc} */
   @Override
   public void actionPerformed(ActionEvent e) {
-    final Resource resource = appContext.getResource();
+    // final Resource resource = appContext.getResource();
 
-    if (resource == null || resource.getResourceType() != PROJECT) {
-      return;
-    }
-    final Project project = (Project) resource;
+    // if (resource == null || resource.getResourceType() != PROJECT) {
+    //   return;
+    // }
+    // final Project project = (Project) resource;
 
-    downloadContainer.setUrl(project.getURL());
+    // downloadContainer.setUrl(project.getURL());
+    return ;
   }
 
   /** {@inheritDoc} */
   @Override
   public void updateInPerspective(@NotNull ActionEvent e) {
-    final Resource[] resources = appContext.getResources();
+    // final Resource[] resources = appContext.getResources();
 
-    e.getPresentation().setVisible(true);
-    e.getPresentation()
-        .setEnabled(
-            resources != null
-                && resources.length == 1
-                && resources[0].getResourceType() == PROJECT);
+    // e.getPresentation().setVisible(true);
+    // e.getPresentation()
+    //     .setEnabled(
+    //         resources != null
+    //             && resources.length == 1
+    //             && resources[0].getResourceType() == PROJECT);
+    return ;
   }
 }

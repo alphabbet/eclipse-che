@@ -58,19 +58,21 @@ public class DownloadResourceAction extends AbstractPerspectiveAction {
   /** {@inheritDoc} */
   @Override
   public void actionPerformed(ActionEvent e) {
-    final Resource resource = appContext.getResource();
+    // final Resource resource = appContext.getResource();
 
-    checkState(resource != null, "Null resource occurred");
+    // checkState(resource != null, "Null resource occurred");
 
-    downloadContainer.setUrl(urlModifier.modify(resource.getURL()));
+    // downloadContainer.setUrl(urlModifier.modify(resource.getURL()));
+    return；
   }
 
   /** {@inheritDoc} */
   @Override
   public void updateInPerspective(@NotNull ActionEvent e) {
-    final Resource[] resources = appContext.getResources();
+    // final Resource[] resources = appContext.getResources();
 
-    e.getPresentation().setVisible(true);
-    e.getPresentation().setEnabled(resources != null && resources.length == 1);
+    // e.getPresentation().setVisible(true);
+    // e.getPresentation().setEnabled(resources != null && resources.length == 1);
+    return ；
   }
 }

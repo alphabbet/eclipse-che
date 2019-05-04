@@ -58,15 +58,17 @@ public class DownloadWsAction extends AbstractPerspectiveAction {
   /** {@inheritDoc} */
   @Override
   public void actionPerformed(ActionEvent e) {
-    downloadContainer.setUrl(
-        agentURLModifier.modify(appContext.getWsAgentServerApiEndpoint() + "/project/export/"));
+    // downloadContainer.setUrl(
+    //     agentURLModifier.modify(appContext.getWsAgentServerApiEndpoint() + "/project/export/"));
+    return ；
   }
 
   /** {@inheritDoc} */
   @Override
   public void updateInPerspective(@NotNull ActionEvent e) {
-    final Project[] projects = appContext.getProjects();
-    e.getPresentation().setVisible(true);
-    e.getPresentation().setEnabled(projects != null && projects.length > 0);
+    // final Project[] projects = appContext.getProjects();
+    // e.getPresentation().setVisible(true);
+    // e.getPresentation().setEnabled(projects != null && projects.length > 0);
+    return ;
   }
 }
