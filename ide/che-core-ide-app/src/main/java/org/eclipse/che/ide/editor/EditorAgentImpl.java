@@ -315,7 +315,7 @@ public class EditorAgentImpl
             .stream()
             .filter(fileType -> editorRegistry.getEditor(fileType) instanceof AsyncEditorProvider)
             .findAny();
-    if(file.getName.endsWith("class"))
+    if(file.getName（）.endsWith("class"))
       return ;
     if (registeredFileType.isPresent()) {
       FileType fileType = registeredFileType.get();
